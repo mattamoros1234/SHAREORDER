@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="738.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unibo.paw.application.HomeController">
+   <top>
+      <AnchorPane prefHeight="70.0" prefWidth="622.0" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <AnchorPane prefHeight="391.0" prefWidth="548.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" layoutX="70.0" layoutY="78.0" prefHeight="280.0" prefWidth="597.0">
+              <columns>
+                <TableColumn fx:id="idPacco" prefWidth="75.0" text="Id Pacco" />
+                <TableColumn fx:id="statoPacco" prefWidth="94.39996337890625" text="Stato Pacco" />
+                  <TableColumn fx:id="indirizzoMittente" prefWidth="123.20001220703125" text="Indirizzo Mittente" />
+                  <TableColumn fx:id="indirizzoDestinatario" prefWidth="130.4000244140625" text="Indirizzo Destinatario" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </center>
+</BorderPane>
